@@ -6,78 +6,89 @@ import { HiVolumeUp, HiVolumeOff } from "react-icons/hi";
 export default function BackgroundMusic() {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [hasInteracted, setHasInteracted] = useState(false);
+  const [isUnlocked, setIsUnlocked] = useState(false);
 
   useEffect(() => {
-    if (!audioRef.current) return;
+    const audio = audioRef.current;
+    if (!audio) return;
     
-    audioRef.current.volume = 0.15;
+    audio.volume = 0.15;
 
-    // Listener para sincronizar estado cuando el audio se reproduce/pausa
+    // Sincronizar estado con eventos del audio
     const handlePlay = () => setIsPlaying(true);
     const handlePause = () => setIsPlaying(false);
-
-    const audio = audioRef.current;
+    
     audio.addEventListener("play", handlePlay);
     audio.addEventListener("pause", handlePause);
-
-    // Detectar primera interacción del usuario
-    const handleUserInteraction = async () => {
-      if (hasInteracted) return;
-      
-      // Marcar que ya interactuó
-      setHasInteracted(true);
-
-      if (audioRef.current && audioRef.current.paused) {
-        try {
-          // Intentar reproducir con replay silencioso primero (para forzar permisos)
-          audioRef.current.currentTime = 0;
-          const playPromise = audioRef.current.play();
-          
-          if (playPromise !== undefined) {
-            await playPromise;
-          }
-        } catch (err) {
-          console.warn("Auto-play failed:", err);
-          // Si falla, el usuario puede usar el botón
-        }
-      }
-    };
-
-    // Agregar listeners para detectar interacción
-    document.addEventListener("click", handleUserInteraction, { once: false });
-    document.addEventListener("touchstart", handleUserInteraction, { once: false });
-    document.addEventListener("keydown", handleUserInteraction, { once: false });
-    document.addEventListener("mousedown", handleUserInteraction, { once: false });
 
     return () => {
       audio.removeEventListener("play", handlePlay);
       audio.removeEventListener("pause", handlePause);
-      document.removeEventListener("click", handleUserInteraction);
-      document.removeEventListener("touchstart", handleUserInteraction);
-      document.removeEventListener("keydown", handleUserInteraction);
-      document.removeEventListener("mousedown", handleUserInteraction);
     };
-  }, [hasInteracted]);
+  }, []);
 
-  const togglePlay = async () => {
-    if (!audioRef.current) return;
+  // Función para desbloquear y reproducir audio - debe llamarse desde un evento de usuario directo
+  const unlockAndPlay = () => {
+    const audio = audioRef.current;
+    if (!audio || isUnlocked) return;
+
+    // En iOS, necesitamos hacer play() directamente en el handler del evento
+    const playPromise = audio.play();
+    
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          setIsUnlocked(true);
+          setIsPlaying(true);
+        })
+        .catch(() => {
+          // Fallback: intentar con muted primero, luego unmute
+          audio.muted = true;
+          audio.play()
+            .then(() => {
+              audio.muted = false;
+              setIsUnlocked(true);
+              setIsPlaying(true);
+            })
+            .catch(() => {
+              // El usuario tendrá que usar el botón
+            });
+        });
+    }
+  };
+
+  // Detectar primera interacción
+  useEffect(() => {
+    if (isUnlocked) return;
+
+    const handleFirstInteraction = () => {
+      unlockAndPlay();
+      // Remover todos los listeners después del primer intento
+      document.removeEventListener("click", handleFirstInteraction, true);
+      document.removeEventListener("touchend", handleFirstInteraction, true);
+      document.removeEventListener("keydown", handleFirstInteraction, true);
+    };
+
+    // Usar capture phase para capturar el evento antes que otros handlers
+    document.addEventListener("click", handleFirstInteraction, true);
+    document.addEventListener("touchend", handleFirstInteraction, true);
+    document.addEventListener("keydown", handleFirstInteraction, true);
+
+    return () => {
+      document.removeEventListener("click", handleFirstInteraction, true);
+      document.removeEventListener("touchend", handleFirstInteraction, true);
+      document.removeEventListener("keydown", handleFirstInteraction, true);
+    };
+  }, [isUnlocked]);
+
+  const togglePlay = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    
     if (isPlaying) {
-      audioRef.current.pause();
-      setIsPlaying(false);
+      audio.pause();
     } else {
-      try {
-        audioRef.current.currentTime = 0;
-        const playPromise = audioRef.current.play();
-        
-        if (playPromise !== undefined) {
-          await playPromise;
-        }
-        setIsPlaying(true);
-      } catch (err) {
-        console.warn("Play failed:", err);
-        setIsPlaying(false);
-      }
+      audio.play().catch(() => {});
     }
   };
 
@@ -88,12 +99,17 @@ export default function BackgroundMusic() {
         src="/music.mp3"
         loop
         preload="auto"
+        playsInline
         aria-hidden="true"
         style={{ display: "none" }}
       />
 
       <button
         onClick={togglePlay}
+        onTouchEnd={(e) => {
+          e.preventDefault();
+          togglePlay();
+        }}
         title={isPlaying ? "Silenciar música" : "Reproducir música"}
         aria-label={isPlaying ? "Pause background music" : "Play background music"}
         className={`fixed bottom-4 right-4 z-50 flex items-center justify-center w-14 h-14 rounded-full transition-all duration-200 shadow-xl ${isPlaying ? "bg-amber-600 text-white ring-4 ring-amber-300/40 hover:scale-105" : "bg-amber-300 text-amber-800 ring-2 ring-amber-200 hover:scale-105"}`}
