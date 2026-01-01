@@ -1,74 +1,74 @@
 [
   {
-    "slug": "maria",
-    "name": "María",
-    "message": "Querida María,\n\nQue este nuevo año te traiga toda la felicidad que mereces. Que cada día sea una nueva oportunidad para brillar y que todos tus sueños se hagan realidad.\n\n¡Feliz Año Nuevo 2026!\n\nCon cariño",
-    "optionalTheme": "gold"
-  },
-  {
-    "slug": "carlos",
-    "name": "Carlos",
-    "message": "Querido Carlos,\n\nGracias por ser parte de mi vida este año. Que el 2026 te traiga éxito, salud y momentos inolvidables junto a los que más quieres.\n\n¡Que sea un año extraordinario!\n\nUn abrazo fuerte",
-    "optionalTheme": "warm"
-  },
-  {
-    "slug": "ana",
-    "name": "Ana",
-    "message": "Querida Ana,\n\nCada año que pasa me recuerda lo afortunado/a que soy de tenerte. Que este 2026 esté lleno de risas, amor y nuevas aventuras.\n\n¡Brindemos por un año increíble!\n\nCon todo mi cariño",
-    "optionalTheme": "rose"
-  },
-  {
     "slug": "jorge",
     "name": "Jorge",
-    "message": "Gracias por apoyarme tanto este año, independientemente de los sucesos recientes, gracias a ti me animé a conseguir un trabajo, decisión de la cual no me arrepiento en lo más mínimo. Gracias a ti estoy más cerca que nunca de cumplir mi más grande sueño: ser como mi padre. Agradezco que me hayas compartido tu sabiduría tanto en hard skills como en soft skills y en general... que de cierta manera me hayas salvado del suicidio al convencerme de expresar mi dolor con los que tengo alrededor y pedir ayuda. Es la segunda vez que salvas mi vida, la primera siendo cuando me invitaste al capítulo por primera vez. Gracias de verdad, definitivamente tengo una deuda contigo que no podría pagar ni en 100 vidas. Espero de todo corazón que tú, Karime y Mikaela sean felices por siempre; espero que algún día se casen y formen una familia aún más grande. Los quiero mucho y gracias de nuevo.",
+    "message": "Gracias por apoyarme tanto este año; independientemente de los sucesos recientes, gracias a ti me animé a conseguir un trabajo, decisión de la cual no me arrepiento en lo más mínimo. Gracias a ti estoy más cerca que nunca de cumplir mi más grande sueño: ser como mi padre. Agradezco que me hayas compartido tu sabiduría tanto en hard skills como en soft skills y, en general, que de cierta manera me hayas salvado del suicidio al convencerme de expresar mi dolor con los que tengo alrededor y pedir ayuda. Es la segunda vez que salvas mi vida —la primera fue cuando me invitaste al capítulo por primera vez—. Gracias de verdad; definitivamente tengo una deuda contigo que no podría pagar ni en 100 vidas. Espero de todo corazón que tú, Karime y Mikaela sean felices por siempre; espero que algún día se casen y formen una familia aún más grande. Los quiero mucho y gracias de nuevo.",
     "optionalTheme": "gold"
   },
   {
     "slug": "karimelody",
     "name": "Karimelody",
-    "message": "Holis, si bien desde que te conocí por primera para mí solo eras \"la novia de Jorge\", en los últimos meses tuve la fortuna de conocerte mucho mejor y eres una persona increíble. Agradezco que te hayas quedado aquella noche junto con Jorge a hablar conmigo y tratar de ayudarme; eres muy buena persona y te considero una amiga muy preciada para mí.\n\nOjalá y si te casas con mi amigo Jorge para que me den mi sobrino de una vez ;)",
+    "message": "Holis, si bien desde que te conocí por primera, para mí solo eras \"la novia de Jorge\", en los últimos meses tuve la fortuna de conocerte mucho mejor y eres una persona increíble. Agradezco que te hayas quedado aquella noche junto con Jorge a hablar conmigo y tratar de ayudarme; eres muy buena persona y te considero una amiga muy preciada para mí.\n\nOjalá se casen con mi amigo Jorge, para que me den mi sobrino de una vez ;)",
     "optionalTheme": "rose"
   },
   {
     "slug": "mikaela",
     "name": "Mikaela",
-    "message": "HOLA BEBEE, querida Mikaela, ojalá crezcas sana y siempre rodeada de amor. Te quiero mucho; cuando crezcas te enseñaré a programar en .NET. tqm",
+    "message": "HOLA, BEBÉ, querida Mikaela: ojalá crezcas sana y siempre rodeada de amor. Te quiero mucho; cuando crezcas te enseñaré a programar en .NET. TQM",
     "optionalTheme": "warm"
   },
   {
     "slug": "mei",
     "name": "Mei",
-    "message": "Hola querida amiga, quiero agradecerte por todo lo que has hecho estos últimos meses por mí. Es gracioso pensar en todos los años que nos frecuentábamos en el G4 sin hacernos puto caso y ahora somos como uña y carne. Agradezco de cierta forma que te hayas desahogado conmigo aquella noche que te llevé a tu casa, ya que ese evento hizo que yo también tuviera la confianza de desahogarme contigo; así nos fuimos conociendo y nos dimos cuenta de que, de hecho, conectamos en muchas cosas. Eres una persona hermosa por dentro y por fuera, alguien con quien puedo hablar sin preocuparme por ser rechazado o juzgado erróneamente. Los últimos meses contigo los he pasado genial, te agradezco por existir y ojalá podamos seguir siendo amigos por mucho tiempo más. tqm amiga, besos",
+    "message": "Hola, querida amiga: quiero agradecerte por todo lo que has hecho estos últimos meses por mí. Es gracioso pensar en todos los años que nos frecuentábamos en el G4 sin prestarnos atención y ahora somos como uña y carne. Agradezco de cierta forma que te hayas desahogado conmigo aquella noche que te llevé a tu casa, ya que ese evento hizo que yo también tuviera la confianza de desahogarme contigo; así nos fuimos conociendo y nos dimos cuenta de que, de hecho, conectamos en muchas cosas. Eres una persona hermosa por dentro y por fuera, alguien con quien puedo hablar sin preocuparme por ser rechazado o juzgado erróneamente. Los últimos meses contigo los he pasado genial; te agradezco por existir y ojalá podamos seguir siendo amigos por mucho tiempo más. tqm, amiga —besos",
     "optionalTheme": "gold"
   },
   {
     "slug": "rafota",
     "name": "Rafota",
-    "message": "Que pedo perrita, te quiero mucho amigo, me alegro de haberte conocido y de haber podido tener el privilegio de crecer junto a ti profesionalmente. Tú me diste muchas veces esa sensación de competencia que tanto anhelaba y siempre te agradeceré por eso; por cierto gracias por la recomendación del corte, ya me dijeron varias viejas que me quedó chido.",
+    "message": "¿Qué pedo, perrita? Te quiero mucho, amigo; me alegro de haberte conocido y de haber podido tener el privilegio de crecer junto a ti profesionalmente. Tú me diste muchas veces esa sensación de competencia que tanto anhelaba y siempre te agradeceré por eso; por cierto, gracias por la recomendación del corte: ya me dijeron varias viejas que me quedó chido.",
     "optionalTheme": "warm"
   },
   {
     "slug": "angel",
     "name": "Ángel",
-    "message": "Hola bro, gracias por tanto. Este año ha estado lleno de cosas geniales; si bien puede que hayamos tenido diferencias y mini pleitos, yo te considero un gran amigo y agradezco todo lo que has hecho por nosotros. Gracias por de alguna manera hacerme empezar a salir más, gracias por ser alguien de confianza con quien puedo hablar de vez en cuando de temas serios. Te considero a ti y a Jimena parte de mi familia; espero que vivan felices y saludables el resto de sus vidas. tqm amigo, la neta que bueno que conseguiste las chambas que tienes, ojalá caigan aún más.",
+    "message": "Hola, bro: gracias por tanto. Este año ha estado lleno de cosas geniales; si bien puede que hayamos tenido diferencias y mini pleitos, yo te considero un gran amigo y agradezco todo lo que has hecho por nosotros. Gracias por, de alguna manera, hacerme empezar a salir más; gracias por ser alguien de confianza con quien puedo hablar de vez en cuando de temas serios. Te considero a ti y a Jimena parte de mi familia; espero que vivan felices y saludables el resto de sus vidas. tqm, amigo —la neta, qué bueno que conseguiste las chambas que tienes; ojalá caigan aún más.",
     "optionalTheme": "gold"
   },
   {
     "slug": "jimenita",
     "name": "Jimenita",
-    "message": "Holi, si bien todo este tiempo te conocía como \"La novia de Ángel\", afortunadamente tuve la oportunidad de conocerte mejor este año y pude darme cuenta de la increíble persona que eres. Eres tan abierta, asertiva y te gusta escuchar a los demás; me alegro que mi amigo se haya conseguido una novia tan maravillosa y espero de corazón que ustedes 2 algún día se casen y tengan una familia. Los quiero mucho y siempre les desearé lo mejor pase lo que pase. Gracias por haberme escuchado ese día; pude liberar un peso que tenía encima.",
+    "message": "Holi: si bien todo este tiempo te conocía como \"La novia de Ángel\", afortunadamente tuve la oportunidad de conocerte mejor este año y pude darme cuenta de la increíble persona que eres. Eres tan abierta, asertiva y te gusta escuchar a los demás; me alegro de que mi amigo se haya conseguido una novia tan maravillosa y espero de corazón que ustedes dos algún día se casen y tengan una familia. Los quiero mucho y siempre les desearé lo mejor pase lo que pase. Gracias por haberme escuchado ese día; pude liberar un peso que tenía encima.",
     "optionalTheme": "rose"
   },
   {
     "slug": "fernanda",
     "name": "Fernanda",
-    "message": "Holis, sé que has estado sufriendo mucho últimamente y debe ser horrible pasar por las cosas que estás pasando, pero desde hace ya rato llevo queriendo decirte que no estás sola. Hablar con las personas que quieres de los problemas que te atormentan es algo que ayuda mucho; no te lo guardes, sácalo, expresa tu dolor. De esa manera tu proceso de sanación será mucho más rápido, te lo digo por experiencia. Yo recientemente tuve pensamientos suicidas... estaba hecho una herida abierta por otras razones y entonces también pasó lo de la posada... algo que si bien no me pasó a mí, me dejó traumado de cierta manera porque yo estaba muy sensible; dejé de comer, dormir y me sobremediqué de fluoxetina, lo cual empeoró cada vez más mi condición hasta un nivel extremo en el que logré pedir ayuda indirectamente a Jorge y él me convenció de decirle a mi familia y amigos y desde entonces he logrado progresar mucho gracias al apoyo de ellos. Me arrepiento enormemente de haberme quedado en shock cuando pasó... eso... simplemente me asusté y no pude hacer nada. Me perturba mucho el hecho de que estabas tan vulnerable y aún así te pasó eso; a veces es algo que no me deja dormir. Espero que ahora estés bien, si puedes trata de ir al psicólogo, puedes hablar conmigo también; te lo debo por haber sido incapaz de hacer algo ese día, de lo cual me arrepiento mucho. Espero que disfrutes a tu familia, los abraces mucho, les digas que los quieres y que pases tiempo de calidad con ellos. tqm amiguita, te deseo lo mejor.",
+    "message": "Holis: sé que has estado sufriendo mucho últimamente y debe ser horrible pasar por las cosas que estás viviendo, pero desde hace ya rato llevo queriendo decirte que no estás sola. Hablar con las personas que quieres de los problemas que te atormentan es algo que ayuda mucho; no te lo guardes, sácalo, expresa tu dolor. De esa manera tu proceso de sanación será mucho más rápido —te lo digo por experiencia. Yo recientemente tuve pensamientos suicidas; estaba hecho una herida abierta por otras razones y entonces también pasó lo de la posada, algo que, si bien no me pasó a mí, me dejó traumado de cierta manera porque yo estaba muy sensible; dejé de comer, dormir y me sobremediqué con fluoxetina, lo cual empeoró cada vez más mi condición hasta un nivel extremo en el que logré pedir ayuda indirectamente a Jorge y él me convenció de decirle a mi familia y amigos y desde entonces he logrado progresar mucho gracias al apoyo de ellos. Me arrepiento enormemente de haberme quedado en shock cuando pasó eso; simplemente me asusté y no pude hacer nada. Me perturba mucho el hecho de que estabas tan vulnerable y, aun así, te pasó eso; a veces es algo que no me deja dormir. Espero que ahora estés bien; si puedes, trata de ir al psicólogo, puedes hablar conmigo también; te lo debo por haber sido incapaz de hacer algo ese día, de lo cual me arrepiento mucho. Espero que disfrutes a tu familia, los abraces mucho, les digas que los quieres y que pases tiempo de calidad con ellos. tqm, amiguita —te deseo lo mejor.",
     "optionalTheme": "warm"
   },
   {
     "slug": "daniel",
     "name": "Daniel",
-    "message": "Hola bebé, me divertí mucho contigo este año. Me alegro de que pudiéramos acercarnos tanto; siento que somos el dúo dinámico de IA + Software en los hackatones y en general cada vez que trabajo contigo siento que tenemos tanta sinergia juntos que podríamos comernos al mundo si nos lo proponemos. Estoy orgulloso de todos tus logros y me alegro de ser tu amigo. Ojalá tengas aún más éxitos este año, tqm amigo.",
+    "message": "Hola, bebé: me divertí mucho contigo este año. Me alegro de que pudiéramos acercarnos tanto; siento que somos el dúo dinámico de IA + Software en los hackatones y, en general, cada vez que trabajo contigo siento que tenemos tanta sinergia juntos que podríamos comernos al mundo si nos lo proponemos. Estoy orgulloso de todos tus logros y me alegro de ser tu amigo. Ojalá tengas aún más éxitos este año; tqm, amigo.",
+    "optionalTheme": "gold"
+  },
+  {
+    "slug": "constanza",
+    "name": "Constanza",
+    "message": "Sinceramente pensé que no volveríamos a hablar nunca más; me alegro de haberme equivocado y, en general, me alegro de la amistad que tenemos al día de hoy, ahora que soy una persona emocionalmente saludable, estable y que no me odio a mí mismo. Sé que este fue definitivamente tu peor año y que tu proceso de sanación va a ser muy largo, pero quiero que te quede claro que no estás sola —y no hablo solo por mí—: tienes familia, amigos, gente que te quiere y te va a apoyar siempre. Me alegra que también tengas la confianza de hablar conmigo y que yo pueda hablarte también de lo mío. Eres una persona muy especial; espero que nunca cambies. Eres absolutamente genial; te quiero mucho y recuerda que mañana será un nuevo día.",
+    "optionalTheme": "gold"
+  },
+  {
+    "slug": "equipo-imet",
+    "name": "Equipo IMET",
+    "message": "Perdón por ser tan introvertido; no llevo mucho tiempo conociéndolos, pero ya los aprecio mucho. Desde el día que llegué me han recibido con los brazos abiertos; gracias a ustedes el ambiente laboral es sorprendentemente agradable y acogedor. Ojalá el siguiente año puedan cumplir todas sus metas y estén cada vez más cerca de cumplir sus sueños. Nunca cambien.",
+    "optionalTheme": "warm"
+  },
+  {
+    "slug": "division-software",
+    "name": "División de Software",
+    "message": "Hola, chicos: seré sincero con ustedes —desde el año pasado me ha preocupado bastante que la división de software muriera—, pero ahora hay tantos nuevos talentos que siento que no debería preocuparme más. Varios de ustedes son totalmente dignos de quedarse con mi posición en algún punto e incluso siento que tienen potencial para ser mucho mejores que yo en relativamente poco tiempo y no tienen idea de lo mucho que me alegra eso. El siguiente año me comprometo a entrenarlos personalmente para que puedan alcanzar la mejor versión de sí mismos; en verdad quiero ver cómo alcanzan su máximo potencial. Me emociono mucho de solo pensarlo: vamos a esforzarnos para cumplir eso este año. ¡ÁNIMO!",
     "optionalTheme": "gold"
   }
 ]

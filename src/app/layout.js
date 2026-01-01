@@ -1,5 +1,6 @@
 import { Playfair_Display, Lora } from "next/font/google";
 import "./globals.css";
+import BackgroundMusic from "@/components/BackgroundMusic";
 
 // Fuente elegante para títulos
 const playfair = Playfair_Display({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         className={`${playfair.variable} ${lora.variable} antialiased font-serif`}
       >
         {children}
+        <BackgroundMusic />
       </body>
     </html>
   );

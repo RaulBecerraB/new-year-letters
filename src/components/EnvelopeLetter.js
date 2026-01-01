@@ -166,7 +166,7 @@ export default function EnvelopeLetter({ name, message }) {
               </h2>
 
               {/* Mensaje */}
-              <p className="font-serif text-base md:text-lg leading-relaxed text-amber-800 whitespace-pre-line text-center">
+              <p className="font-serif text-base md:text-lg leading-relaxed text-amber-800 whitespace-pre-line text-justify">
                 {message}
               </p>
 
