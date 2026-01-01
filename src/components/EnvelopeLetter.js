@@ -181,6 +181,12 @@ export default function EnvelopeLetter({ name, message }) {
                 {message}
               </p>
 
+              {/* Firma */}
+              <div className="text-right mt-8 text-amber-700">
+                <p className="font-serif text-lg italic">Con amor,</p>
+                <p className="font-serif text-xl font-semibold">Raúl</p>
+              </div>
+
               {/* Decoración inferior */}
               <div className="flex items-center justify-center gap-3 mt-8 text-amber-400">
                 <div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-300" />
