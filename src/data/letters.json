@@ -103,4 +103,23 @@
     "message": "Lamento no haberte hablado tanto este año; como te conté hace unos días, recién salí de mi bloqueo emocional de 10 años y, en retrospectiva, me arrepiento de no haber pasado más tiempo contigo. Eres tan agradable, risueño y, en general, tu sola presencia genera un aura de felicidad que contagia a los demás. Eres de lo mejor y espero que nunca cambies, querido amigo. Te quiero mucho.",
     "optionalTheme": "gold"
   }
+  ,
+  {
+    "slug": "mich",
+    "name": "Mich",
+    "message": "Que pedo pinche anciano de mierda, te quiero mucho, a veces estás muy void pero la neta el capítulo no sería lo mismo sin ti, eres a todo dar bro, tqm",
+    "optionalTheme": "warm"
+  },
+  {
+    "slug": "hugo",
+    "name": "Hugo",
+    "message": "Hola bro, la neta ya ando medio pedo escribiendo esto pero te quería decir que eres genial, independientemente de lo que ha pasado me sigues pareciendo alguien digno de mucha admiración y un ejemplo a seguir como ingeniero, eres genial, ojalá sigas sacando buenas chambas y manteniendo con vida a BBVA, tqm, el capítulo ya no fue lo mismo sin ti, ten un año espectacular hermano",
+    "optionalTheme": "warm"
+  },
+  {
+    "slug": "tatiana",
+    "name": "Tatiana",
+    "message": "Sé que probablemente no vas a leer esto nunca, pero aprecio haberte conocido, este año has pasado por tantos cambios, algunos para bien y otros para mal, me alegro de que te hayas animado a probar nuevas experiencias y en general a cambiar como persona para bien, pero... siento que no deberías dejar de ser la niña cariñosa que conocí alguna vez, la última vez que hablamos me di cuenta de que te volviste una persona muy fría, incluso me mencionaste que no fui el único que te lo ha dicho, no dejes que esa niña cariñosa que solo sabía expresar amor quede en el pasado, espero de todo corazón que no cierres tu corazón, te deseo la mejor de las vidas, te amaré y atesoraré los recuerdos de nuestra vida juntos por siempre",
+    "optionalTheme": "warm"
+  }
 ]
