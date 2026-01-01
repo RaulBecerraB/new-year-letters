@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "maria",
+    "name": "María",
+    "message": "Querida María,\n\nQue este nuevo año te traiga toda la felicidad que mereces. Que cada día sea una nueva oportunidad para brillar y que todos tus sueños se hagan realidad.\n\n¡Feliz Año Nuevo 2026!\n\nCon cariño",
+    "optionalTheme": "gold"
+  },
+  {
+    "slug": "carlos",
+    "name": "Carlos",
+    "message": "Querido Carlos,\n\nGracias por ser parte de mi vida este año. Que el 2026 te traiga éxito, salud y momentos inolvidables junto a los que más quieres.\n\n¡Que sea un año extraordinario!\n\nUn abrazo fuerte",
+    "optionalTheme": "warm"
+  },
+  {
+    "slug": "ana",
+    "name": "Ana",
+    "message": "Querida Ana,\n\nCada año que pasa me recuerda lo afortunado/a que soy de tenerte. Que este 2026 esté lleno de risas, amor y nuevas aventuras.\n\n¡Brindemos por un año increíble!\n\nCon todo mi cariño",
+    "optionalTheme": "rose"
+  }
+]
