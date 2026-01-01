@@ -71,4 +71,23 @@
     "message": "Hola, chicos: seré sincero con ustedes —desde el año pasado me ha preocupado bastante que la división de software muriera—, pero ahora hay tantos nuevos talentos que siento que no debería preocuparme más. Varios de ustedes son totalmente dignos de quedarse con mi posición en algún punto e incluso siento que tienen potencial para ser mucho mejores que yo en relativamente poco tiempo y no tienen idea de lo mucho que me alegra eso. El siguiente año me comprometo a entrenarlos personalmente para que puedan alcanzar la mejor versión de sí mismos; en verdad quiero ver cómo alcanzan su máximo potencial. Me emociono mucho de solo pensarlo: vamos a esforzarnos para cumplir eso este año. ¡ÁNIMO!",
     "optionalTheme": "gold"
   }
+  ,
+  {
+    "slug": "fernando",
+    "name": "Fernando",
+    "message": "Hola amigo, sé que no convivimos tanto este año pero igual fuiste de las primeras personas a las que les hablé del Tec en general. La primera vez que te vi te me hiciste mu mamón, pero cuando empezamos a hablar me caíste muy bien casi inmediatamente. Es muy cool hablar contigo de vez en cuando sobre cómo va la escuela, la chamba, nuevos aprendizajes, etc. Espero que podamos hablar más seguido este año; lamento que te hayas caído de la moto, igual ya ocupabas un evento canónico. Aún sigo esperando que me digas cuándo quieres que te enseñe a programar como me pediste. Eres mi amigo y no tengo problema en ayudarte siempre que me lo pidas. TQM, amigo; feliz año y ojalá te recuperes pronto.",
+    "optionalTheme": "warm"
+  },
+  {
+    "slug": "elias",
+    "name": "Elías",
+    "message": "Hola bro: eres una persona increíble. Me acuerdo que cuando entré al capítulo fuiste de los que me recibieron con los brazos abiertos y una sonrisa; eres alguien que de alguna manera solo sabe expresar amor y buenas vibras a los que lo rodean y eso hace que valgas mucho como persona. Ojalá nunca cambies, TQM amigo; sigue así. Me alegra que te vaya bien en la chamba, esperemos que en 2026 caigan chambas aún mejores; serás el mejor SecDevOps de Mérida, te lo aseguro.",
+    "optionalTheme": "gold"
+  },
+  {
+    "slug": "michael",
+    "name": "Michael",
+    "message": "Hola Michael, llevamos muy poco tiempo conociéndonos pero has cambiado mi vida para bien. Te agradezco enormemente que hayas visto tanto potencial en nosotros como para confiar en recomendarnos tanto al IMET como a Techmaleon; haré todo lo posible para cumplir tus expectativas este año. Te deseo mucho éxito en todo lo que hagas; gracias por todo.",
+    "optionalTheme": "gold"
+  }
 ]

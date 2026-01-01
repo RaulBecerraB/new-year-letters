@@ -20,6 +20,11 @@ export const metadata = {
   title: "Cartas de Año Nuevo 2026",
   description: "Cartas digitales personalizadas para celebrar el Año Nuevo 2026",
   keywords: ["año nuevo", "cartas", "felicitación", "2026"],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg"
+  },
 };
 
 export default function RootLayout({ children }) {
