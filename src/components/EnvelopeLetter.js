@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import { HiSparkles, HiStar } from "react-icons/hi";
+import Link from "next/link";
+import { HiSparkles, HiStar, HiArrowLeft } from "react-icons/hi";
 import { BsStars } from "react-icons/bs";
 
 const Confetti = dynamic(() => import("react-confetti"), { ssr: false });
@@ -44,6 +45,16 @@ export default function EnvelopeLetter({ name, message }) {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 relative z-10">
+      {/* Botón de regreso */}
+      <Link
+        href="/"
+        className="absolute top-6 left-6 flex items-center gap-2 px-4 py-2 bg-amber-100 hover:bg-amber-200 text-amber-700 rounded-full shadow-md transition-all duration-200 hover:scale-105"
+        title="Volver a todas las cartas"
+      >
+        <HiArrowLeft className="w-5 h-5" />
+        <span className="hidden sm:inline font-semibold">Volver</span>
+      </Link>
+
       {/* Confetti continuo */}
       {isMounted && (
         <Confetti

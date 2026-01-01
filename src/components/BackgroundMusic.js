@@ -6,27 +6,47 @@ import { HiVolumeUp, HiVolumeOff } from "react-icons/hi";
 export default function BackgroundMusic() {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [autoPlayAttempted, setAutoPlayAttempted] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   useEffect(() => {
-    // Intentar autoplay al montar (puede ser bloqueado por el navegador)
-    const tryPlay = async () => {
-      if (!audioRef.current) return;
-      // reducir volumen por defecto para que no sea intrusiva
-      audioRef.current.volume = 0.25;
-      try {
-        await audioRef.current.play();
-        setIsPlaying(true);
-      } catch (err) {
-        // Autoplay pudo ser bloqueado; dejamos el control al usuario
-        setIsPlaying(false);
-      } finally {
-        setAutoPlayAttempted(true);
+    if (!audioRef.current) return;
+    
+    audioRef.current.volume = 0.15;
+
+    // Listener para sincronizar estado cuando el audio se reproduce/pausa
+    const handlePlay = () => setIsPlaying(true);
+    const handlePause = () => setIsPlaying(false);
+
+    const audio = audioRef.current;
+    audio.addEventListener("play", handlePlay);
+    audio.addEventListener("pause", handlePause);
+
+    // Detectar primera interacción del usuario
+    const handleUserInteraction = async () => {
+      if (hasInteracted) return;
+      setHasInteracted(true);
+
+      if (audioRef.current && audioRef.current.paused) {
+        try {
+          await audioRef.current.play();
+        } catch (err) {
+          // Si falla, el usuario puede usar el botón
+        }
       }
     };
 
-    tryPlay();
-  }, []);
+    document.addEventListener("click", handleUserInteraction);
+    document.addEventListener("touchstart", handleUserInteraction);
+    document.addEventListener("keydown", handleUserInteraction);
+
+    return () => {
+      audio.removeEventListener("play", handlePlay);
+      audio.removeEventListener("pause", handlePause);
+      document.removeEventListener("click", handleUserInteraction);
+      document.removeEventListener("touchstart", handleUserInteraction);
+      document.removeEventListener("keydown", handleUserInteraction);
+    };
+  }, [hasInteracted]);
 
   const togglePlay = async () => {
     if (!audioRef.current) return;
@@ -38,7 +58,6 @@ export default function BackgroundMusic() {
         await audioRef.current.play();
         setIsPlaying(true);
       } catch (err) {
-        // Si falla reproducir, mantener estado
         setIsPlaying(false);
       }
     }
@@ -50,6 +69,7 @@ export default function BackgroundMusic() {
         ref={audioRef}
         src="/music.mp3"
         loop
+        autoPlay
         preload="auto"
         aria-hidden="true"
         style={{ display: "none" }}
