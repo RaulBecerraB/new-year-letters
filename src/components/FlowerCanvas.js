@@ -242,28 +242,48 @@ export default function FlowerCanvas() {
       }
     }
 
-    // Inicializar elementos
-    const petalCount = 25;
-    const flowerCount = 8;
-    const sparkleCount = 30;
+    // Inicializar elementos en función del tamaño del canvas (más flores en pantallas grandes)
+    const initElements = () => {
+      petals = [];
+      flowers = [];
+      const sparkles = [];
 
-    for (let i = 0; i < petalCount; i++) {
-      const petal = new Petal();
-      petal.y = Math.random() * canvas.height; // Distribuir inicialmente
-      petals.push(petal);
-    }
+      const area = canvas.width * canvas.height;
 
-    for (let i = 0; i < flowerCount; i++) {
-      flowers.push(new Flower(
-        Math.random() * canvas.width,
-        Math.random() * canvas.height
-      ));
-    }
+      // Ajustar densidades según área (clamp para evitar excesos)
+      const flowerCount = Math.min(Math.max(Math.floor(area / 50000), 12), 45);
+      const petalCount = Math.min(Math.max(Math.floor(area / 15000), 40), 400);
+      const sparkleCount = Math.min(Math.max(Math.floor(area / 20000), 40), 160);
 
-    const sparkles = [];
-    for (let i = 0; i < sparkleCount; i++) {
-      sparkles.push(new Sparkle());
-    }
+      for (let i = 0; i < petalCount; i++) {
+        const petal = new Petal();
+        petal.y = Math.random() * canvas.height; // Distribuir inicialmente
+        petals.push(petal);
+      }
+
+      for (let i = 0; i < flowerCount; i++) {
+        flowers.push(new Flower(
+          Math.random() * canvas.width,
+          Math.random() * canvas.height
+        ));
+      }
+
+      for (let i = 0; i < sparkleCount; i++) {
+        sparkles.push(new Sparkle());
+      }
+
+      // Reemplazar sparkles en el scope exterior
+      // (usamos array mutable para que animate lo vea)
+      if (typeof window !== "undefined") {
+        // assign to outer sparkles variable by clearing and pushing
+      }
+
+      // Simplemente devolvemos el array para que lo capture el scope
+      return sparkles;
+    };
+
+    // Crear sparkles fuera para que animate los vea
+    let sparkles = initElements();
 
     // Loop de animación
     const animate = () => {
