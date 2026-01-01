@@ -24,20 +24,31 @@ export default function BackgroundMusic() {
     // Detectar primera interacción del usuario
     const handleUserInteraction = async () => {
       if (hasInteracted) return;
+      
+      // Marcar que ya interactuó
       setHasInteracted(true);
 
       if (audioRef.current && audioRef.current.paused) {
         try {
-          await audioRef.current.play();
+          // Intentar reproducir con replay silencioso primero (para forzar permisos)
+          audioRef.current.currentTime = 0;
+          const playPromise = audioRef.current.play();
+          
+          if (playPromise !== undefined) {
+            await playPromise;
+          }
         } catch (err) {
+          console.warn("Auto-play failed:", err);
           // Si falla, el usuario puede usar el botón
         }
       }
     };
 
-    document.addEventListener("click", handleUserInteraction);
-    document.addEventListener("touchstart", handleUserInteraction);
-    document.addEventListener("keydown", handleUserInteraction);
+    // Agregar listeners para detectar interacción
+    document.addEventListener("click", handleUserInteraction, { once: false });
+    document.addEventListener("touchstart", handleUserInteraction, { once: false });
+    document.addEventListener("keydown", handleUserInteraction, { once: false });
+    document.addEventListener("mousedown", handleUserInteraction, { once: false });
 
     return () => {
       audio.removeEventListener("play", handlePlay);
@@ -45,6 +56,7 @@ export default function BackgroundMusic() {
       document.removeEventListener("click", handleUserInteraction);
       document.removeEventListener("touchstart", handleUserInteraction);
       document.removeEventListener("keydown", handleUserInteraction);
+      document.removeEventListener("mousedown", handleUserInteraction);
     };
   }, [hasInteracted]);
 
@@ -55,9 +67,15 @@ export default function BackgroundMusic() {
       setIsPlaying(false);
     } else {
       try {
-        await audioRef.current.play();
+        audioRef.current.currentTime = 0;
+        const playPromise = audioRef.current.play();
+        
+        if (playPromise !== undefined) {
+          await playPromise;
+        }
         setIsPlaying(true);
       } catch (err) {
+        console.warn("Play failed:", err);
         setIsPlaying(false);
       }
     }
@@ -69,7 +87,6 @@ export default function BackgroundMusic() {
         ref={audioRef}
         src="/music.mp3"
         loop
-        autoPlay
         preload="auto"
         aria-hidden="true"
         style={{ display: "none" }}
