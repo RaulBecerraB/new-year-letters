@@ -90,4 +90,17 @@
     "message": "Hola Michael, llevamos muy poco tiempo conociéndonos pero has cambiado mi vida para bien. Te agradezco enormemente que hayas visto tanto potencial en nosotros como para confiar en recomendarnos tanto al IMET como a Techmaleon; haré todo lo posible para cumplir tus expectativas este año. Te deseo mucho éxito en todo lo que hagas; gracias por todo.",
     "optionalTheme": "gold"
   }
+  ,
+  {
+    "slug": "oswaldo",
+    "name": "Oswaldo",
+    "message": "Si bien este año no convivimos mucho, me alegro de haberte conocido; has sido mucha diversión y aprendizaje durante estos años. Indirectamente, gracias a ti adquirí varias de mis habilidades y, en general, me siento agradecido contigo por muchas cosas. Te quiero mucho amigo; nunca cambies, eres increíble y vas a lograr muchas cosas. Suerte.",
+    "optionalTheme": "warm"
+  },
+  {
+    "slug": "eduardo",
+    "name": "Eduardo",
+    "message": "Lamento no haberte hablado tanto este año; como te conté hace unos días, recién salí de mi bloqueo emocional de 10 años y, en retrospectiva, me arrepiento de no haber pasado más tiempo contigo. Eres tan agradable, risueño y, en general, tu sola presencia genera un aura de felicidad que contagia a los demás. Eres de lo mejor y espero que nunca cambies, querido amigo. Te quiero mucho.",
+    "optionalTheme": "gold"
+  }
 ]
